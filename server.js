@@ -9,7 +9,7 @@ app.use(express.json());
 require("./db/conn.js");
 const users = require("./models/userSchema.js");
 const router = require("./routes/router.js");
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // app.get("/", (req, res) => {
 //   res.send("Server is running");
