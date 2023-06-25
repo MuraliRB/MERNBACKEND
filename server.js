@@ -11,9 +11,9 @@ const users = require("./models/userSchema.js");
 const router = require("./routes/router.js");
 const PORT = process.env.PORT || 5000;
 
-// app.get("/", (req, res) => {
-//   res.send("Server is running");
-// });
+app.get("/", (req, res) => {
+  res.send("Server is running");
+});
 
 app.use(router);
 
